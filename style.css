@@ -1,0 +1,193 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #A52A2A, rgb(218, 106, 149));
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Header section */
+header {
+  width: 100%;
+  height: 350px;
+  background-image: 
+    linear-gradient(to bottom, rgba(165,42,42,0.6), rgba(218,106,149,0.9)),
+    url('images/background_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title inside header */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  margin: 0;
+}
+
+/* Subheading */
+#sub-heading {
+  font-size: 1.5rem;
+  max-width: 90%;
+  margin-top: 1rem;
+}
+
+/* Button groups */
+.button-group,
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+/* Buttons */
+.button-group button,
+.game-buttons button {
+  flex: 1 1 180px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #A52A2A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-group button:hover,
+.game-buttons button:hover {
+  background-color: rgb(218, 106, 149);
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid rgb(218, 106, 149);
+  outline-offset: 2px;
+}
+
+/* Game page title */
+.game-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+/* Score and result boxes */
+#score-box,
+#result-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 400px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#score-box button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#score-box button:hover {
+  background-color: rgb(218, 106, 149);
+}
+
+/* Content section */
+.container {
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 900px;
+}
+
+/* Section headings */
+h2 {
+  margin-bottom: 25px;
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+/* Emoji icons section */
+.icons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.emoji-icons {
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+  margin: 10px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.emoji-icons:hover {
+  transform: scale(1.2);
+  color: rgb(218, 106, 149);
+}
+
+/* List styling */
+ul {
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+/* Closing paragraph */
+#closing-p {
+  max-width: 900px;
+  text-align: left;
+  margin: 2rem auto 3rem auto;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .button-group,
+  .game-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group button,
+  .game-buttons button {
+    width: 80%;
+  }
+
+  #sub-heading {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

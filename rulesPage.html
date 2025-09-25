@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>How to Play</h2>
+    <p id="closing-p">
+      Face your opponent. Count together: “Rock, Paper, Scissors, Shoot!” — on “Shoot,” both players reveal their shape.
+      Determine the winner based on the rules below.<br><br>
+      Rock ✊, Paper 🤚, Scissors ✌️ — a fast-paced hand game of reflex and strategy. 
+      Each player chooses one of three shapes and reveals it at the same time. 
+      The winner is decided instantly based on simple rules.
+    </p>
+
+    <h2>Moves & Matchups</h2>
+    <div class="icons">
+      <div class="emoji-icons" onclick="alert('Rock crushes Scissors')">✊</div> ROCK
+      <div class="emoji-icons" onclick="alert('Paper covers Rock')">🤚</div> PAPER
+      <div class="emoji-icons" onclick="alert('Scissors cut Paper')">✌️</div> SCISSORS
+    </div>
+
+    <ul>
+      <li>✊ Rock crushes ✌️ Scissors → Rock wins</li>
+      <li>✌️ Scissors cut 🤚 Paper → Scissors win</li>
+      <li>🤚 Paper covers ✊ Rock → Paper wins</li>
+      <li>If both players choose the same shape → It’s a tie</li>
+    </ul>
+
+  </div>
+
+  <div class="button-group">
+    <button onclick="window.location.href='index.html'">HOME</button>
+    <button onclick="window.location.href='computerGamePage.html'">PLAY WITH COMPUTER</button>
+  </div>
+
+</body>
+</html>
